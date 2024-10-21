@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --textfonts: Outfit;
+  --headerfont: Young Serif;
+  --paraColor: hsl(30, 10%, 34%);
+  --headingColor: hsl(14, 45%, 36%);
+  --prepColor: hsl(332, 51%, 32%);
+  --prepBgColor: hsl(330, 100%, 98%);
+}
+body {
+  background-color: hsl(30, 54%, 90%);
+}
+.card__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh auto;
+}
+.card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 20px;
+  width: 620px;
+}
+.simple__omelette h1 {
+  padding: 15px 0;
+  font-family: var(--headerfont);
+  color: hsl(24, 5%, 18%);
+  font-size: 2rem;
+}
+img {
+  width: 580px;
+  border-radius: 10px;
+}
+.simple__omelette p {
+  line-height: 20px;
+  color: var(--paraColor);
+  padding-bottom: 30px;
+  font-family: var(--textfonts);
+}
+
+.time {
+  background-color: var(--prepBgColor);
+  padding: 20px;
+  color: var(--prepColor);
+  border-radius: 10px;
+}
+.time h2 {
+  padding: 10px 0;
+  font-size: 1rem;
+}
+.time li {
+  font-size: 0.8rem;
+  line-height: 20px;
+  color: var(--paraColor);
+}
+.ingredients,
+.instructions {
+  padding: 0 0 30px 0;
+  border-bottom: 0.5px double rgba(202, 194, 194, 0.486);
+}
+
+.ingredients h3,
+.instructions h3,
+.Nutrition h3 {
+  padding: 15px 0;
+  font-size: 1.5rem;
+  color: var(--headingColor);
+  font-family: var(--headerfont);
+  letter-spacing: 2px;
+}
+
+.ingredients li {
+  font-family: var(--textfonts);
+  font-size: 0.8rem;
+  color: var(--paraColor);
+  line-height: 20px;
+}
+
+.instructions ol li {
+  font-family: var(--textfonts);
+  font-size: 0.8rem;
+  color: var(--paraColor);
+  line-height: 20px;
+  padding-left: 12px;
+  /* line-height: 25px; */
+}
+.instructions ol {
+  padding-left: 10px;
+}
+.instructions ol li::marker {
+  color: var(--headingColor);
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.Nutrition .first {
+  font-family: var(--textfonts);
+  color: var(--paraColor);
+  padding-bottom: 15px;
+}
+.table p {
+  font-family: var(--textfonts);
+  font-size: 1.1rem;
+  color: var(--paraColor);
+}
+.table h4 {
+  font-family: var(--textfonts);
+  color: var(--headingColor);
+  font-weight: bold;
+  font-size: 1rem;
+}
+.table {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 0.5px double rgba(202, 194, 194, 0.486);
+  padding: 10px;
+}
+.last {
+  border: none;
+}
+
+/* media queries for mobile design start */
+
+@media (max-width: 660px) {
+  img {
+    border-radius: 0;
+    padding: none;
+    width: 620px;
+  }
+  .card {
+    padding: 0;
+    width: 620px;
+  }
+  .card__details {
+    padding: 40px;
+  }
+  .ingredients,
+  .simple__omelette,
+  .Nutrition,
+  .instructions {
+    padding: 20px;
+  }
+}
+@media (max-width: 641px) {
+  img,
+  .card {
+    width: 600px;
+  }
+}
+@media (max-width: 618px) {
+  img,
+  .card {
+    width: 580px;
+  }
+}
+@media (max-width: 598px) {
+  img,
+  .card {
+    width: 560px;
+  }
+}
+@media (max-width: 580px) {
+  img,
+  .card {
+    width: 520px;
+  }
+}
+@media (max-width: 537px) {
+  img,
+  .card {
+    width: 500px;
+  }
+}
+@media (max-width: 515px) {
+  img,
+  .card {
+    width: 400px;
+  }
+}
+@media (max-width: 423px) {
+  img,
+  .card {
+    width: 350px;
+  }
+  .ingredients,
+  .simple__omelette,
+  .Nutrition,
+  .instructions {
+    padding: 20px;
+  }
+}
+@media (max-width: 369px) {
+  img,
+  .card {
+    width: 320px;
+  }
+}
+/* media queries for mobile design end */
